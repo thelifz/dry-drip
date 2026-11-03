@@ -1,5 +1,5 @@
 /* ══════════════════════════════════════════════════════
-   MERA LAUNDRY — Hamburger / Mobile Menu Toggle
+   DRY DRIP — Hamburger / Mobile Menu Toggle
    ══════════════════════════════════════════════════════ */
 
 (function () {

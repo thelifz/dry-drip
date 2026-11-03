@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mera Laundry – Premium Laundry Service | 5 Lakh+ Happy Customers</title>
-  <meta name="description" content="Mera Laundry offers premium laundry services with FREE pick & drop across 10+ cities. Trusted by 5 Lakh+ customers. Book now!" />
+  <title>Dry Drip – Premium Laundry Service | 5 Lakh+ Happy Customers</title>
+  <meta name="description" content="Dry Drip offers premium laundry services with FREE pick & drop across 10+ cities. Trusted by 5 Lakh+ customers. Book now!" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
@@ -44,7 +44,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        color: #E86A10;
+        color: #2563EB;
         /* GSAP Initial State */
         opacity: 0;
         transform: scale(0.5); 
@@ -59,9 +59,9 @@
 
     .pricing-card:hover, .step-card:hover, .service-card:hover {
         transform: translateY(-12px);
-        box-shadow: 0 25px 50px rgba(232, 106, 16, 0.08), 0 10px 20px rgba(0, 0, 0, 0.04);
-        /* If your cards have borders, this softly highlights them in brand orange */
-        border-color: rgba(232, 106, 16, 0.2); 
+        box-shadow: 0 25px 50px rgba(37, 99, 235, 0.08), 0 10px 20px rgba(0, 0, 0, 0.04);
+        /* If your cards have borders, this softly highlights them in brand blue */
+        border-color: rgba(37, 99, 235, 0.2); 
     }
 </style>
 
@@ -107,18 +107,15 @@
   <header class="navbar" role="navigation" aria-label="Main navigation">
     <div class="navbar__inner">
 
-      <!-- Brand / Logo -->
-      <a href="/" class="navbar__brand" aria-label="Mera Laundry – Home">
-        <div class="brand-icon" aria-hidden="true">
-          <span class="brand-icon__text">ml</span>
-        </div>
-        <span class="brand-name">MERA LAUNDRY</span>
+      <!-- Brand -->
+      <a href="/" class="navbar__brand" aria-label="Dry Drip – Home">
+        <span class="brand-name">DRY DRIP</span>
       </a>
 
       <!-- Desktop Navigation Links -->
       <nav class="navbar__links" aria-label="Site navigation">
-        <div onclick="openCityModal()" style="display: inline-flex; align-items: center; gap: 6px; cursor: pointer; margin-right: 20px; font-weight: 700; color: #1F2937; padding: 8px 16px; background: #FFF4EC; border-radius: 20px; border: 1px solid #FFE4D6; transition: all 0.2s ease;">
-    <svg width="16" height="16" fill="none" stroke="#E86A10" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        <div onclick="openCityModal()" style="display: inline-flex; align-items: center; gap: 6px; cursor: pointer; margin-right: 20px; font-weight: 700; color: #1F2937; padding: 8px 16px; background: #EFF6FF; border-radius: 20px; border: 1px solid #DBEAFE; transition: all 0.2s ease;">
+    <svg width="16" height="16" fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
     Bengaluru
 </div>
         <a href="#login"     id="nav-login"     class="nav-link">Login</a>
@@ -250,7 +247,7 @@
     }
 
     .close-modal-btn:hover {
-        color: #E86A10;
+        color: #2563EB;
     }
 
     .modal-header h2 {
@@ -302,8 +299,8 @@
     }
 
     .booking-form input:focus, .booking-form select:focus {
-        border-color: #E86A10;
-        box-shadow: 0 0 0 3px rgba(232, 106, 16, 0.1);
+        border-color: #2563EB;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
     }
 
     .submit-booking-btn {
@@ -359,18 +356,18 @@
 
     /* Active State (When a service is selected) */
     .delivery-estimate-badge.active-estimate {
-        background: #FFF4EC;
-        border-color: rgba(232, 106, 16, 0.2);
+        background: #EFF6FF;
+        border-color: rgba(37, 99, 235, 0.2);
     }
 
     .delivery-estimate-badge.active-estimate .estimate-value {
-        color: #E86A10;
+        color: #2563EB;
         background: #FFFFFF;
-        box-shadow: 0 4px 12px rgba(232, 106, 16, 0.15); /* Soft orange glow */
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15); /* Soft blue glow */
     }
     
     .delivery-estimate-badge.active-estimate svg {
-        stroke: #E86A10; /* Colors the icon orange */
+        stroke: #2563EB; /* Colors the icon blue */
     }
 
     /* Premium Smart Washer Container */
@@ -396,9 +393,9 @@
     .smart-washer {
         width: 100%;
         /* Premium light brand-tinted glass surface */
-        background: linear-gradient(145deg, #FFFFFF, #FFF4EC); 
-        border: 2px solid rgba(232, 106, 16, 0.15);
-        box-shadow: 0 30px 60px rgba(232, 106, 16, 0.08), inset 0 2px 10px rgba(255, 255, 255, 1);
+        background: linear-gradient(145deg, #FFFFFF, #EFF6FF); 
+        border: 2px solid rgba(37, 99, 235, 0.15);
+        box-shadow: 0 30px 60px rgba(37, 99, 235, 0.08), inset 0 2px 10px rgba(255, 255, 255, 1);
         border-radius: 30px;
         padding: 40px;
         position: relative;
@@ -432,21 +429,21 @@
     }
 
     .dot.active {
-        background: #E86A10;
-        box-shadow: 0 0 12px rgba(232, 106, 16, 0.6);
+        background: #2563EB;
+        box-shadow: 0 0 12px rgba(37, 99, 235, 0.6);
     }
 
     /* 1. Soften the digital display so it isn't a harsh black box */
     .digital-display {
-        background: #FFF4EC; /* Soft brand background */
-        color: #E86A10; /* Brand orange text */
+        background: #EFF6FF; /* Soft brand background */
+        color: #2563EB; /* Brand blue text */
         font-family: monospace;
         font-size: 18px;
         font-weight: 800;
         padding: 8px 18px;
         border-radius: 8px;
         letter-spacing: 2px;
-        border: 1px solid rgba(232, 106, 16, 0.2); /* Delicate outline */
+        border: 1px solid rgba(37, 99, 235, 0.2); /* Delicate outline */
         box-shadow: none;
     }
 
@@ -510,7 +507,7 @@
     .drum-brand-text {
         position: absolute;
         z-index: 5; /* Ensures it sits on top of the water layers */
-        color: #E86A10; /* Brand Orange */
+        color: #2563EB; /* Brand Blue */
         font-size: 22px;
         font-weight: 800;
         letter-spacing: 1.5px;
@@ -563,8 +560,8 @@
     .badge-icon {
         width: 28px;
         height: 28px;
-        background: #FFF4EC;
-        color: #E86A10;
+        background: #EFF6FF;
+        color: #2563EB;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -884,18 +881,18 @@
         z-index: 4;
     }
 
-    /* The Orange Machine */
+    /* The Blue Machine */
     #washerSon .machine-body {
-        background: linear-gradient(145deg, #FF8A3D, #E86A10) !important;
+        background: linear-gradient(145deg, #3B82F6, #2563EB) !important;
     }
     #washerSon .machine-door {
-        background: #FF9B5A !important;
-        border-color: #C0550B !important;
+        background: #60A5FA !important;
+        border-color: #1D4ED8 !important;
     }
 
     /* The Magnetic Glow Effect for the Button */
     .btn-glow {
-        box-shadow: 0 0 25px rgba(232, 106, 16, 0.6) !important;
+        box-shadow: 0 0 25px rgba(37, 99, 235, 0.6) !important;
         transform: scale(1.05);
         transition: all 0.3s ease;
     }
@@ -910,7 +907,7 @@
         min-height: auto;
         padding-top: 40px;
         padding-bottom: 60px; /* Gives the machines space to breathe at the bottom */
-        background-color: #FFF4EC; /* Your peach brand color */
+        background-color: #EFF6FF; /* Your peach brand color */
         overflow: hidden; /* Prevents anything from spilling out */
     }
 
@@ -974,7 +971,7 @@
             </div>
         </div>
 
-        <div class="smart-machine-character machine-member theme-orange" id="washerSon">
+        <div class="smart-machine-character machine-member theme-blue" id="washerSon">
             <div class="machine-body"><div class="control-panel"><span class="light"></span><span class="light"></span><span class="light blue-light"></span></div>
                 <div class="machine-door"><div class="glass-glare"></div><div class="face-container"><div class="eyes"><div class="eye"><div class="pupil"><div class="glare-large"></div><div class="glare-small"></div></div></div><div class="eye"><div class="pupil"><div class="glare-large"></div><div class="glare-small"></div></div></div></div><div class="blush-container"><div class="blush"></div><div class="blush"></div></div><div class="mouth"></div></div></div>
             </div>
@@ -1011,15 +1008,15 @@
     }
     .service-card:hover {
         transform: translateY(-12px) !important;
-        border-color: #E86A10;
-        box-shadow: 0 20px 40px rgba(232, 106, 16, 0.15);
+        border-color: #2563EB;
+        box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
     }
     .icon-wrap {
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        background: #FFF4EC;
-        color: #E86A10;
+        background: #EFF6FF;
+        color: #2563EB;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1040,7 +1037,7 @@
     .price-bold {
         font-size: 28px;
         font-weight: 900;
-        color: #E86A10;
+        color: #2563EB;
     }
     .time-wrap {
         font-size: 13px;
@@ -1051,17 +1048,17 @@
         position: absolute;
         top: 20px;
         right: -35px;
-        background: #E86A10;
+        background: #2563EB;
         color: white;
         font-size: 10px;
         font-weight: 800;
         padding: 6px 40px;
         transform: rotate(45deg);
         letter-spacing: 1px;
-        box-shadow: 0 4px 10px rgba(232, 106, 16, 0.3);
+        box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
     }
     .most-popular {
-        border-color: rgba(232, 106, 16, 0.2);
+        border-color: rgba(37, 99, 235, 0.2);
     }
     .card-action {
         margin-top: 20px;
@@ -1081,7 +1078,7 @@
   <section id="pricing-services" class="pricing-section" style="position: relative; z-index: 10; background-color: #FAFAFA; padding: 100px 5%; min-height: 100vh;">
     <div style="text-align: center; margin-bottom: 50px;">
         <h2 style="font-size: 32px; color: #1F2937; font-weight: 800; margin-bottom: 10px;">PRICING & SERVICES</h2>
-        <div style="width: 60px; height: 4px; background: #E86A10; margin: 0 auto; border-radius: 2px;"></div>
+        <div style="width: 60px; height: 4px; background: #2563EB; margin: 0 auto; border-radius: 2px;"></div>
     </div>
 
     <div class="services-grid">
@@ -1089,12 +1086,12 @@
             <div class="icon-wrap" style="position: relative; display: flex; align-items: center; justify-content: center;">
                 
                 <!-- 1. Your existing T-Shirt SVG -->
-                <svg class="anim-tshirt" style="position: absolute;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#E86A10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="anim-tshirt" style="position: absolute;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M20.38 3.46L16 2a8 8 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"></path>
                 </svg>
 
                 <!-- 2. New Washing Machine SVG -->
-                <svg class="anim-machine" style="position: absolute; opacity: 0;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#E86A10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="anim-machine" style="position: absolute; opacity: 0;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="4" y="2" width="16" height="20" rx="2"></rect>
                     <circle cx="12" cy="14" r="4"></circle>
                     <path d="M8 6h.01"></path>
@@ -1102,7 +1099,7 @@
                 </svg>
 
                 <!-- 3. New Folded Clothes SVG -->
-                <svg class="anim-folded" style="position: absolute; opacity: 0;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#E86A10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="anim-folded" style="position: absolute; opacity: 0;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
                     <path d="M2 12l10 5 10-5"></path>
                     <path d="M2 17l10 5 10-5"></path>
@@ -1120,7 +1117,7 @@
             <div class="icon-wrap" style="position: relative; display: flex; align-items: center; justify-content: center;">
                 
                 <!-- 1. Your existing Wash & Iron Logo SVG -->
-                <svg class="anim-default-iron" style="position: absolute;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#E86A10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="anim-default-iron" style="position: absolute;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <!-- Folded Clothes Stack -->
                     <rect x="4" y="15" width="16" height="3" rx="1"></rect>
                     <rect x="5" y="18" width="14" height="3" rx="1"></rect>
@@ -1140,7 +1137,7 @@
                 </svg>
 
                 <!-- 2. Same Washing Machine SVG -->
-                <svg class="anim-machine-iron" style="position: absolute; opacity: 0;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#E86A10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="anim-machine-iron" style="position: absolute; opacity: 0;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="4" y="2" width="16" height="20" rx="2"></rect>
                     <circle cx="12" cy="14" r="4"></circle>
                     <path d="M8 6h.01"></path>
@@ -1148,7 +1145,7 @@
                 </svg>
 
                 <!-- 3. New Steaming Iron SVG -->
-                <svg class="anim-steam-iron" style="position: absolute; opacity: 0;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#E86A10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="anim-steam-iron" style="position: absolute; opacity: 0;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M4 16h16l-3-6H9c-3 0-4.5 3-5 6z"></path>
                     <path d="M8 10V6h6v4"></path>
                     <path d="M6 20v2"></path>
@@ -1167,7 +1164,7 @@
             <div class="icon-wrap" style="position: relative; display: flex; align-items: center; justify-content: center;">
                 
                 <!-- 1. Your existing Express Logo SVG -->
-                <svg class="anim-default-express" style="position: absolute;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#E86A10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="anim-default-express" style="position: absolute;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <!-- Stopwatch Body -->
                     <circle cx="12" cy="13" r="8"></circle>
                     <!-- Top Button -->
@@ -1178,13 +1175,13 @@
                 </svg>
 
                 <!-- 2. New Clock SVG -->
-                <svg class="anim-ticking-clock" style="position: absolute; opacity: 0;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#E86A10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="anim-ticking-clock" style="position: absolute; opacity: 0;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="10"></circle>
                     <polyline points="12 6 12 12 16 14"></polyline>
                 </svg>
 
                 <!-- 3. New Lightning Bolt / Speed Flash SVG -->
-                <svg class="anim-lightning-flash" style="position: absolute; opacity: 0;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#E86A10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="anim-lightning-flash" style="position: absolute; opacity: 0;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                 </svg>
 
@@ -1198,7 +1195,7 @@
         <div class="service-card reveal-up" id="card-dry-clean">
             <div class="icon-wrap" style="position: relative; display: flex; align-items: center; justify-content: center;">
                 
-                <svg class="anim-default-dry" style="position: absolute;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#E86A10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="anim-default-dry" style="position: absolute;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <!-- Hanger Hook -->
                     <path d="M12 7a2 2 0 0 0-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2"></path>
                     <!-- Jacket Shoulders & Body -->
@@ -1209,7 +1206,7 @@
                     <line x1="12" y1="16" x2="12" y2="22"></line>
                 </svg>
 
-                <svg class="anim-suit-jacket" style="position: absolute; opacity: 0;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#E86A10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="anim-suit-jacket" style="position: absolute; opacity: 0;" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 2a2 2 0 0 1 2 2c0 1-1 1-1 2"></path>
                     <path d="M5 9c0-1.5 3-4 7-4s7 2.5 7 4l-2 13H7L5 9z"></path>
                     <path d="M12 9v13"></path>
@@ -1254,7 +1251,7 @@
     .promise-divider {
         width: 60px;
         height: 4px;
-        background: #E86A10;
+        background: #2563EB;
         border-radius: 2px;
         margin-bottom: 40px;
     }
@@ -1270,8 +1267,8 @@
     .promise-icon {
         width: 50px;
         height: 50px;
-        background: #FFF4EC;
-        color: #E86A10;
+        background: #EFF6FF;
+        color: #2563EB;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -1314,7 +1311,7 @@
         width: 100%;
         height: 100%;
         border-radius: 24px;
-        border: 2px dashed #E86A10;
+        border: 2px dashed #2563EB;
         z-index: -1;
     }
   </style>
@@ -1367,7 +1364,7 @@
         </div>
 
         <div class="promise-image-wrapper">
-            <img src="assets/mera-laundry-storefront.jpg" alt="Mera Laundry Storefront">
+            <img src="assets/mera-laundry-storefront.jpg" alt="Dry Drip Storefront">
         </div>
     </div>
   </section>
@@ -1389,7 +1386,7 @@
     .hiw-divider {
         width: 60px;
         height: 4px;
-        background: #E86A10;
+        background: #2563EB;
         border-radius: 2px;
         margin: 0 auto 50px auto;
     }
@@ -1421,25 +1418,25 @@
         right: 10px;
         font-size: 100px;
         font-weight: 900;
-        color: rgba(232, 106, 16, 0.05);
+        color: rgba(37, 99, 235, 0.05);
         z-index: -1;
         transition: all 0.4s ease;
         pointer-events: none;
     }
     .step-card:hover {
         transform: translateY(-12px) !important;
-        border-color: #E86A10;
-        box-shadow: 0 20px 40px rgba(232, 106, 16, 0.12);
+        border-color: #2563EB;
+        box-shadow: 0 20px 40px rgba(37, 99, 235, 0.12);
     }
     .step-card:hover .step-number-watermark {
-        color: rgba(232, 106, 16, 0.1);
+        color: rgba(37, 99, 235, 0.1);
         transform: scale(1.1) rotate(5deg);
     }
     .step-icon-wrap {
         width: 80px;
         height: 80px;
-        background: #FFF4EC;
-        color: #E86A10;
+        background: #EFF6FF;
+        color: #2563EB;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -1462,7 +1459,7 @@
             right: -25px;
             transform: translateY(-50%);
             font-size: 24px;
-            color: rgba(232, 106, 16, 0.4);
+            color: rgba(37, 99, 235, 0.4);
             z-index: 10;
         }
     }
@@ -1493,7 +1490,7 @@
     .phone-screen {
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg, #FF8C00 0%, #E86A10 100%);
+        background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
         border-radius: 14px;
         display: flex;
         flex-direction: column;
@@ -1564,7 +1561,7 @@
     .door-scene {
         width: 100%;
         height: 100%;
-        background: #FFDAB9; /* House interior color */
+        background: #BFDBFE; /* House interior color */
         border-radius: 14px;
         overflow: hidden;
         position: relative;
@@ -1580,9 +1577,9 @@
         top: 0; left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg, #FF8C00 0%, #E86A10 100%);
+        background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
         border-radius: 14px;
-        border-right: 4px solid #C0550B;
+        border-right: 4px solid #1D4ED8;
         z-index: 5;
     }
 
@@ -1606,7 +1603,7 @@
         position: absolute;
         top: 20px;
         width: 100%;
-        color: #E86A10;
+        color: #2563EB;
         font-size: 13px;
         font-weight: 800;
         text-align: center;
@@ -1636,15 +1633,15 @@
     .washer-chassis {
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg, #FF8C00 0%, #E86A10 100%);
+        background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
         border-radius: 12px;
         padding: 8px;
-        box-shadow: 0 20px 40px rgba(0,0,0,0.15), inset 0 -4px 0 #C0550B;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15), inset 0 -4px 0 #1D4ED8;
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 2px solid #C0550B;
+        border: 2px solid #1D4ED8;
     }
     
     .washer-panel {
@@ -1674,12 +1671,12 @@
         width: 70px;
         height: 70px;
         border-radius: 50%;
-        border: 5px solid #FFDAB9;
+        border: 5px solid #BFDBFE;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #fff; /* White interior so orange water pops */
+        background: #fff; /* White interior so blue water pops */
         overflow: hidden;
     }
 
@@ -1695,7 +1692,7 @@
         left: -10%;
         width: 120%;
         height: 70%;
-        background: rgba(232, 106, 16, 0.75); /* Orange water color */
+        background: rgba(37, 99, 235, 0.75); /* Blue water color */
         border-radius: 40%; /* Wavy top */
     }
 
@@ -1703,7 +1700,7 @@
         position: absolute;
         bottom: -25px;
         width: 100%;
-        color: #E86A10;
+        color: #2563EB;
         font-size: 13px;
         font-weight: 800;
         text-align: center;
@@ -1735,7 +1732,7 @@
         height: 100%;
         background: #fff;
         border-radius: 16px;
-        box-shadow: 0 20px 40px rgba(0,0,0,0.15), inset 0 0 0 2px #E86A10;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15), inset 0 0 0 2px #2563EB;
         position: relative;
         overflow: hidden;
     }
@@ -1746,7 +1743,7 @@
         left: 0;
         width: 200%;
         height: 4px;
-        background: repeating-linear-gradient(90deg, #E86A10 0px, #E86A10 15px, transparent 15px, transparent 30px);
+        background: repeating-linear-gradient(90deg, #2563EB 0px, #2563EB 15px, transparent 15px, transparent 30px);
     }
 
     .orange-truck-svg {
@@ -1768,7 +1765,7 @@
     }
     .exhaust-clouds .cloud {
         position: absolute;
-        background: #FFDAB9;
+        background: #BFDBFE;
         border-radius: 50%;
         opacity: 0;
     }
@@ -1780,7 +1777,7 @@
         position: absolute;
         bottom: -25px;
         width: 100%;
-        color: #E86A10;
+        color: #2563EB;
         font-size: 13px;
         font-weight: 800;
         text-align: center;
@@ -1841,21 +1838,21 @@
                             <!-- Basket (Static inside door until picked up) -->
                             <g class="laundry-basket">
                                 <path fill="#fff" d="M35 100 L65 100 L70 70 L30 70 Z" />
-                                <path fill="#E86A10" opacity="0.5" d="M32 70 Q50 60 68 70 Z" />
+                                <path fill="#2563EB" opacity="0.5" d="M32 70 Q50 60 68 70 Z" />
                             </g>
                         
-                            <!-- Orange Man (Starts outside right, slides in) -->
+                            <!-- Service Man (Starts outside right, slides in) -->
                             <g class="orange-man">
                                 <!-- Head with cap -->
-                                <circle cx="85" cy="40" r="12" fill="#E86A10" />
-                                <path d="M73 40 Q85 25 100 40 Z" fill="#E86A10" />
+                                <circle cx="85" cy="40" r="12" fill="#2563EB" />
+                                <path d="M73 40 Q85 25 100 40 Z" fill="#2563EB" />
                                 <!-- Torso -->
-                                <path d="M75 55 Q85 50 95 55 L90 95 L80 95 Z" fill="#E86A10" />
+                                <path d="M75 55 Q85 50 95 55 L90 95 L80 95 Z" fill="#2563EB" />
                                 <!-- Legs -->
-                                <path d="M80 95 L80 115" stroke="#E86A10" stroke-width="8" stroke-linecap="round" />
-                                <path d="M90 95 L90 115" stroke="#E86A10" stroke-width="8" stroke-linecap="round" />
+                                <path d="M80 95 L80 115" stroke="#2563EB" stroke-width="8" stroke-linecap="round" />
+                                <path d="M90 95 L90 115" stroke="#2563EB" stroke-width="8" stroke-linecap="round" />
                                 <!-- Arm -->
-                                <path class="man-arm" d="M85 60 Q70 70 55 75" stroke="#E86A10" stroke-width="8" stroke-linecap="round" fill="none" />
+                                <path class="man-arm" d="M85 60 Q70 70 55 75" stroke="#2563EB" stroke-width="8" stroke-linecap="round" fill="none" />
                             </g>
                         </svg>
 
@@ -1870,7 +1867,7 @@
             </div>
 
             <div class="step-icon-wrap">
-                <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#E86A10" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                     <!-- The Door Frame -->
                     <rect x="4" y="3" width="16" height="18" rx="2" ry="2"></rect>
                     <line x1="16" y1="12" x2="16" y2="12"></line>
@@ -1935,18 +1932,18 @@
                     </div>
                     <svg viewBox="0 0 24 24" class="orange-truck-svg">
                         <!-- Trailer Box -->
-                        <rect x="2" y="6" width="12" height="12" rx="1.5" fill="#E86A10" />
+                        <rect x="2" y="6" width="12" height="12" rx="1.5" fill="#2563EB" />
                         <!-- Cab -->
-                        <path d="M13 9 L18 9 L22 13 L22 16.5 A 1.5 1.5 0 0 1 20.5 18 L13 18 Z" fill="#E86A10" />
+                        <path d="M13 9 L18 9 L22 13 L22 16.5 A 1.5 1.5 0 0 1 20.5 18 L13 18 Z" fill="#2563EB" />
                         <!-- Gap Filler between Box and Cab -->
-                        <rect x="10" y="9" width="4" height="9" fill="#E86A10" />
+                        <rect x="10" y="9" width="4" height="9" fill="#2563EB" />
                         <!-- Window -->
-                        <path d="M15 10.5 h 2.5 l 2.5 2.5 v 2 h -5 z" fill="#FFDAB9" />
+                        <path d="M15 10.5 h 2.5 l 2.5 2.5 v 2 h -5 z" fill="#BFDBFE" />
                         <!-- Wheel wells/Wheels -->
-                        <circle cx="7" cy="18" r="2.5" fill="#C0550B" />
-                        <circle cx="17" cy="18" r="2.5" fill="#C0550B" />
+                        <circle cx="7" cy="18" r="2.5" fill="#1D4ED8" />
+                        <circle cx="17" cy="18" r="2.5" fill="#1D4ED8" />
                         <!-- Stripe -->
-                        <rect x="4" y="11" width="7" height="1.5" rx="0.5" fill="#FFDAB9" />
+                        <rect x="4" y="11" width="7" height="1.5" rx="0.5" fill="#BFDBFE" />
                     </svg>
                 </div>
                 <div class="delivery-text">Delivering!</div>
@@ -1997,7 +1994,7 @@
     }
     .quote-icon {
         font-size: 60px;
-        color: rgba(232, 106, 16, 0.2);
+        color: rgba(37, 99, 235, 0.2);
         line-height: 1;
         margin-bottom: 10px;
         font-family: serif;
@@ -2044,7 +2041,7 @@
         transition: all 0.3s ease;
     }
     .dot.active {
-        background: #E86A10;
+        background: #2563EB;
         transform: scale(1.4);
     }
   </style>
@@ -2057,7 +2054,7 @@
             <div class="testimonial-slide">
                 <div class="quote-icon">❝</div>
                 <div class="star-rating">★★★★★</div>
-                <p class="testimonial-text">"Between back-to-back meetings and the daily commute, doing laundry was my biggest headache. Mera Laundry completely changed the game. Their free pickup is always exactly on time."</p>
+                <p class="testimonial-text">"Between back-to-back meetings and the daily commute, doing laundry was my biggest headache. Dry Drip completely changed the game. Their free pickup is always exactly on time."</p>
                 <h4 class="author-name">Vikram K.</h4>
                 <div class="author-title">Regular Customer</div>
             </div>
@@ -2111,7 +2108,7 @@
     .faq-divider {
         width: 60px;
         height: 4px;
-        background: #E86A10;
+        background: #2563EB;
         margin: 0 auto 50px auto;
         border-radius: 2px;
     }
@@ -2137,7 +2134,7 @@
         transition: color 0.3s ease;
     }
     .faq-question:hover {
-        color: #E86A10;
+        color: #2563EB;
     }
     .faq-icon {
         width: 24px;
@@ -2150,7 +2147,7 @@
     .faq-icon::before, .faq-icon::after {
         content: '';
         position: absolute;
-        background: #E86A10;
+        background: #2563EB;
         transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
         border-radius: 2px;
     }
@@ -2264,7 +2261,7 @@
             <div class="form-row">
                 <div class="form-group">
                     <label>Full Name</label>
-                    <input type="text" placeholder="e.g. Mera Customer" required>
+                    <input type="text" placeholder="e.g. Dry Drip Customer" required>
                 </div>
                 <div class="form-group">
                     <label>Phone Number</label>
@@ -3185,7 +3182,7 @@ dryCleanCard.addEventListener('mouseenter', () => {
         line-height: 1;
     }
     #close-city-modal:hover {
-        color: #E86A10;
+        color: #2563EB;
     }
 
     /* Search Bar */
@@ -3205,8 +3202,8 @@ dryCleanCard.addEventListener('mouseenter', () => {
         box-sizing: border-box;
     }
     .city-search-wrapper input:focus {
-        border-color: #E86A10;
-        box-shadow: 0 0 0 4px rgba(232, 106, 16, 0.1);
+        border-color: #2563EB;
+        box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
     }
     .city-search-icon {
         position: absolute;
@@ -3233,16 +3230,16 @@ dryCleanCard.addEventListener('mouseenter', () => {
         font-weight: 600;
     }
     .city-card:hover {
-        border-color: #E86A10;
-        background: #FFF4EC;
-        color: #E86A10;
+        border-color: #2563EB;
+        background: #EFF6FF;
+        color: #2563EB;
         transform: translateY(-2px);
     }
     .city-card.active {
-        border-color: #E86A10;
-        background: #E86A10;
+        border-color: #2563EB;
+        background: #2563EB;
         color: #FFFFFF;
-        box-shadow: 0 4px 12px rgba(232, 106, 16, 0.3);
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
     }
 </style>
 
@@ -3304,7 +3301,7 @@ dryCleanCard.addEventListener('mouseenter', () => {
         transition: color 0.2s ease;
     }
     .seo-links a:hover {
-        color: #E86A10;
+        color: #2563EB;
     }
     .seo-separator {
         color: #4B5563;
@@ -3325,7 +3322,7 @@ dryCleanCard.addEventListener('mouseenter', () => {
         margin-bottom: 0;
     }
     .contact-label {
-        color: #E86A10;
+        color: #2563EB;
         font-weight: 700;
         margin-bottom: 5px;
         font-size: 13px;
@@ -3360,7 +3357,7 @@ dryCleanCard.addEventListener('mouseenter', () => {
         color: #FFFFFF;
     }
     .agency-name {
-        color: #E86A10;
+        color: #2563EB;
         font-weight: 800;
         letter-spacing: 0.5px;
     }
@@ -3426,7 +3423,7 @@ dryCleanCard.addEventListener('mouseenter', () => {
             <div class="footer-contact-box gsap-footer-reveal">
                 <div class="contact-item">
                     <div class="contact-label">Helpline</div>
-                    <div class="contact-text">support@meralaundry.in</div>
+                    <div class="contact-text">support@drydrip.in</div>
                 </div>
                 <div class="contact-item">
                     <div class="contact-label">Head Office</div>
@@ -3449,7 +3446,7 @@ dryCleanCard.addEventListener('mouseenter', () => {
                 <a href="#">Terms & Conditions</a>
             </div>
             <div class="agency-credit">
-                Copyright © 2026 Mera Laundry. Designed & Developed by <span class="agency-name">WebDev 24</span>.
+                Copyright © 2026 Dry Drip. Designed & Developed by <span class="agency-name">WebDev 24</span>.
             </div>
         </div>
 
