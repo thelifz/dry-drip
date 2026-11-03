@@ -114,7 +114,7 @@
 
       <!-- Desktop Navigation Links -->
       <nav class="navbar__links" aria-label="Site navigation">
-        <div onclick="openCityModal()" style="display: inline-flex; align-items: center; gap: 6px; cursor: pointer; margin-right: 20px; font-weight: 700; color: #1F2937; padding: 8px 16px; background: #EFF6FF; border-radius: 20px; border: 1px solid #DBEAFE; transition: all 0.2s ease;">
+        <div onclick="openCityModal()" class="city-picker-btn" style="display: inline-flex; align-items: center; gap: 6px; cursor: pointer; margin-right: 20px; font-weight: 700; color: #1F2937; padding: 8px 16px; background: #EFF6FF; border-radius: 20px; border: 1px solid #DBEAFE; transition: all 0.2s ease;">
     <svg width="16" height="16" fill="none" stroke="#2563EB" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
     Bengaluru
 </div>
@@ -790,9 +790,11 @@
         overflow-x: hidden; /* Prevents horizontal scrolling bugs */
     }
 
-    .hero-image-wrapper {
-        height: auto !important; /* Strips out any forced height causing overlap */
-        padding-bottom: 40px;
+    @media (min-width: 769px) {
+        .hero-image-wrapper {
+            height: auto !important;
+            padding-bottom: 40px;
+        }
     }
 
     /* The Nuclear Gap Fix */
@@ -820,10 +822,12 @@
     }
     
     /* Pushes the Washing Machines to the far right */
-    .hero-image-wrapper {
-        margin-left: auto !important; 
-        margin-right: 0 !important;
-        transform: scale(0.85); /* Keeps them at a professional size */
+    @media (min-width: 769px) {
+        .hero-image-wrapper {
+            margin-left: auto !important;
+            margin-right: 0 !important;
+            transform: scale(0.85);
+        }
     }
 
     /* 1. The Sticky Header */
@@ -918,12 +922,14 @@
     }
 
     /* Pushes the machines to the right and scales them safely */
-    .hero-image-wrapper {
-        position: relative;
-        width: 100%;
-        max-width: 450px;
-        margin: 0 auto;
-        transform: scale(0.85); 
+    @media (min-width: 769px) {
+        .hero-image-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+            transform: scale(0.85);
+        }
     }
 
     /* --- 2. PRICING & PROMISE RESET (Nuking the Gaps) --- */
